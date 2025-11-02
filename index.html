@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="pl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jurajska Pracownia Archeologiczna — Badania i Nadzory</title>
-  <meta name="description" content="Nadzory i badania archeologiczne, badania powierzchniowe i ratownicze, opracowania materiałów krzemiennych oraz obsługa prawno-konserwatorska." />
+  <meta name="description" content="Nadzory i badania archeologiczne, badania powierzchniowe i ratownicze, opracowania materiałów krzemiennych oraz obsługa prawno-konserwatorska.">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/css/style.css"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -90,7 +91,7 @@
         </div>
         <div class="lg:col-span-5">
           <div class="relative aspect-[4/5] overflow-hidden rounded-3xl border border-sand-200 bg-white shadow-soft">
-            <img src="https://jurapolska.com/foto/jurapolska455.jpg" alt="Prace archeologiczne na stanowisku" class="h-full w-full object-cover" />
+            <img src="https://jurapolska.com/foto/jurapolska455.jpg" alt="Prace archeologiczne na stanowisku" class="h-full w-full object-cover">
             <div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/40 to-transparent text-white">
               <p class="text-sm">Jura Krakowsko-Częstochowska</p>
             </div>
@@ -214,7 +215,7 @@
       <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <article class="group overflow-hidden rounded-3xl border border-sand-200 bg-white shadow-soft">
           <div class="relative aspect-video">
-            <img src="https://jurapolska.com/foto/jurapolska1399.jpg" alt="Aerial" class="h-full w-full object-cover group-hover:scale-105 transition" />
+            <img src="https://jurapolska.com/foto/jurapolska1399.jpg" alt="Aerial" class="h-full w-full object-cover group-hover:scale-105 transition">
             <span class="absolute left-3 top-3 rounded-full bg-white/90 px-2 py-1 text-xs">przykład</span>
           </div>
           <div class="p-6">
@@ -224,7 +225,7 @@
         </article>
         <article class="group overflow-hidden rounded-3xl border border-sand-200 bg-white shadow-soft">
           <div class="relative aspect-video">
-            <img src="https://jurapolska.com/foto/jurapolska1407.jpg" alt="Pottery" class="h-full w-full object-cover group-hover:scale-105 transition" />
+            <img src="https://jurapolska.com/foto/jurapolska1407.jpg" alt="Pottery" class="h-full w-full object-cover group-hover:scale-105 transition">
             <span class="absolute left-3 top-3 rounded-full bg-white/90 px-2 py-1 text-xs">przykład</span>
           </div>
           <div class="p-6">
@@ -234,7 +235,7 @@
         </article>
         <article class="group overflow-hidden rounded-3xl border border-sand-200 bg-white shadow-soft">
           <div class="relative aspect-video">
-            <img src="https://jurapolska.com/foto/jurapolska1009.jpg" alt="Workshop" class="h-full w-full object-cover group-hover:scale-105 transition" />
+            <img src="https://jurapolska.com/foto/jurapolska1009.jpg" alt="Workshop" class="h-full w-full object-cover group-hover:scale-105 transition">
             <span class="absolute left-3 top-3 rounded-full bg-white/90 px-2 py-1 text-xs">przykład</span>
           </div>
           <div class="p-6">
@@ -277,21 +278,27 @@
           <form action="https://formsubmit.co" method="post" class="grid gap-4" aria-label="Formularz kontaktowy">
             <div>
               <label for="name" class="block text-sm font-medium">Imię i nazwisko</label>
-              <input id="name" name="name" type="text" required class="mt-1 w-full rounded-xl border border-sand-300 bg-sand-50 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sand-400" />
+              <input id="name" name="name" type="text" required class="mt-1 w-full rounded-xl border border-sand-300 bg-sand-50 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sand-400">
             </div>
             <div>
               <label for="email" class="block text-sm font-medium">Adres e-mail</label>
-              <input id="email" name="email" type="email" required class="mt-1 w-full rounded-xl border border-sand-300 bg-sand-50 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sand-400" />
+              <input id="email" name="email" type="email" required class="mt-1 w-full rounded-xl border border-sand-300 bg-sand-50 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sand-400">
             </div>
             <div>
               <label for="message" class="block text-sm font-medium">Opis inwestycji / wiadomość</label>
               <textarea id="message" name="message" rows="4" required class="mt-1 w-full rounded-xl border border-sand-300 bg-sand-50 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sand-400"></textarea>
             </div>
             <div class="flex items-center justify-between gap-4">
-              <label class="inline-flex items-center gap-2 text-xs"><input type="checkbox" class="rounded border-sand-300" required/> Wyrażam zgodę na kontakt w sprawie mojego zapytania.</label>
+              <label class="inline-flex items-center gap-2 text-xs"><input type="checkbox" class="rounded border-sand-300" required> Wyrażam zgodę na kontakt w sprawie mojego zapytania.</label>
               <button type="submit" class="inline-flex items-center gap-2 rounded-xl bg-sand-900 px-5 py-3 text-white hover:opacity-90">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 12h14M12 5l7 7-7 7"/></svg>
                 Wyślij
               </button>
             </div>
           </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
