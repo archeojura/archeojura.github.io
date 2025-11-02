@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jurajska Pracownia Archeologiczna — Badania i Nadzory</title>
+  <meta name="description" content="Nadzory i badania archeologiczne, badania powierzchniowe i ratownicze, opracowania materiałów krzemiennych oraz obsługa prawno-konserwatorska." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ["ui-sans-serif","system-ui","Inter","Helvetica Neue","Arial"],
+            body: ["ui-sans-serif","system-ui","Inter","Helvetica Neue","Arial"],
+          },
+          colors: {
+            sand: {
+              50:"#f8f5f1",100:"#f2ece3",200:"#e7dcc7",300:"#dac6a3",
+              400:"#c9ac79",500:"#b99255",600:"#9a7440",700:"#785932",800:"#5c4427",900:"#3b2c19"
+            }
+          },
+          boxShadow:{ soft:"0 10px 30px -10px rgba(0,0,0,.25)" },
+          backgroundImage:{
+            "hero-texture":"radial-gradient(1200px 600px at 100% -20%, rgba(185,146,85,.25), transparent 60%), radial-gradient(800px 400px at -10% 110%, rgba(201,172,121,.2), transparent 60%)"
+          }
+        }
+      }
+    }
+  </script>
+  <style>html{scroll-behavior:smooth}</style>
+</head>
+<body class="bg-sand-50 text-sand-900 font-body">
+  <!-- Nawigacja -->
+  <header class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/70 shadow-soft">
+    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="#top" class="flex items-center gap-3 group" aria-label="Strona główna">
+          <span class="inline-flex h-9 w-40 items-center justify-center rounded-xl bg-sand-900 text-sand-50 shadow">Archeo Jura</span>
+          <span class="font-display text-lg tracking-tight group-hover:opacity-80">Jurajska Pracownia Archeologiczna</span>
+        </a>
+        <div class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#about" class="hover:opacity-80">O nas</a>
+          <a href="#services" class="hover:opacity-80">Usługi</a>
+          <a href="#projects" class="hover:opacity-80">Realizacje</a>
+          <a href="#publications" class="hover:opacity-80">Publikacje</a>
+          <a href="#contact" class="inline-flex items-center gap-2 rounded-full border border-sand-300 px-4 py-2 hover:bg-sand-100">Kontakt</a>
+        </div>
+        <button class="md:hidden inline-flex items-center justify-center rounded-xl border border-sand-300 px-3 py-2" aria-label="Otwórz menu" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-sand-200 bg-white/80">
+      <div class="mx-auto max-w-7xl px-4 py-3 flex flex-col gap-2">
+        <a href="#about" class="py-2">O nas</a>
+        <a href="#services" class="py-2">Usługi</a>
+        <a href="#projects" class="py-2">Realizacje</a>
+        <a href="#publications" class="py-2">Publikacje</a>
+        <a href="#contact" class="py-2">Kontakt</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative overflow-hidden bg-hero-texture">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-16 pb-24">
+      <div class="grid lg:grid-cols-12 items-center gap-10">
+        <div class="lg:col-span-7">
+          <div class="inline-flex items-center gap-2 rounded-full border border-sand-300 bg-white/70 px-3 py-1 text-xs mb-6">
+            <span class="inline-block h-2 w-2 rounded-full bg-emerald-500"></span>
+            Realizujemy nadzory i badania na terenie Jury oraz całej Polski
+          </div>
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight leading-tight">
+            Jurajska Pracownia Archeologiczna
+          </h1>
+          <p class="mt-6 max-w-2xl text-sand-700">
+            Nadzory archeologiczne • badania wykopaliskowe i powierzchniowe • badania ratownicze • opracowania materiałów krzemiennych • obsługa prawno-konserwatorska.
+          </p>
+          <div class="mt-8 flex flex-wrap items-center gap-3">
+            <a href="#services" class="inline-flex items-center gap-2 rounded-xl bg-sand-900 px-5 py-3 text-white shadow hover:opacity-90">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 7h18M3 12h18M3 17h18"/></svg>
+              Poznaj usługi
+            </a>
+            <a href="#contact" class="inline-flex items-center gap-2 rounded-xl border border-sand-300 bg-white px-5 py-3 hover:bg-sand-100">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4"/></svg>
+              Wyceń zlecenie
+            </a>
+          </div>
+        </div>
+        <div class="lg:col-span-5">
+          <div class="relative aspect-[4/5] overflow-hidden rounded-3xl border border-sand-200 bg-white shadow-soft">
+            <img src="https://jurapolska.com/foto/jurapolska455.jpg" alt="Prace archeologiczne na stanowisku" class="h-full w-full object-cover" />
+            <div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/40 to-transparent text-white">
+              <p class="text-sm">Jura Krakowsko-Częstochowska</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- O nas -->
+  <section id="about" class="py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 gap-12">
+        <div>
+          <h2 class="font-display text-3xl font-semibold tracking-tight">O nas</h2>
+          <p class="mt-4 text-sand-700">
+            Działamy na styku badań terenowych i prac gabinetowych. Zapewniamy pełen proces: od nadzoru w trakcie robót ziemnych,
+            przez wykopy i badania powierzchniowe, po opracowania i obsługę formalną zgodną z wymaganiami WKZ.
+          </p>
+          <ul class="mt-6 space-y-3 text-sand-800">
+            <li class="flex items-start gap-3"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-sand-700"></span>Teren działania: Jura Krakowsko-Częstochowska i cała Polska</li>
+            <li class="flex items-start gap-3"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-sand-700"></span>Współpraca z inwestorami prywatnymi, biurami projektowymi i samorządami</li>
+            <li class="flex items-start gap-3"><span class="mt-1 inline-block h-2 w-2 rounded-full bg-sand-700"></span>Terminowość, przejrzysta dokumentacja i wsparcie formalne</li>
+          </ul>
+        </div>
+        <div class="lg:col-span-2 grid md:grid-cols-2 gap-6">
+          <div class="rounded-3xl border border-sand-200 bg-white p-6 shadow-soft">
+            <h3 class="font-semibold">Metody</h3>
+            <p class="mt-2 text-sm text-sand-700">Stratigrafia, dokumentacja cyfrowa, fotogrametria 3D, GIS, RTK/GNSS.</p>
+          </div>
+          <div class="rounded-3xl border border-sand-200 bg-white p-6 shadow-soft">
+            <h3 class="font-semibold">Narzędzia</h3>
+            <p class="mt-2 text-sm text-sand-700">QGIS, Agisoft Metashape, CAD; pełne zaplecze terenowe i pomiarowe.</p>
+          </div>
+          <div class="rounded-3xl border border-sand-200 bg-white p-6 shadow-soft">
+            <h3 class="font-semibold">Zakres</h3>
+            <p class="mt-2 text-sm text-sand-700">Inwestycje liniowe i kubaturowe, planowanie przestrzenne, projekty naukowe.</p>
+          </div>
+          <div class="rounded-3xl border border-sand-200 bg-white p-6 shadow-soft">
+            <h3 class="font-semibold">Współpraca</h3>
+            <p class="mt-2 text-sm text-sand-700">Inwestorzy, muzealnicy, jednostki naukowe i służby konserwatorskie.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Usługi -->
+  <section id="services" class="py-20 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between gap-6">
+        <h2 class="font-display text-3xl font-semibold tracking-tight">Usługi</h2>
+        <a href="#contact" class="hidden md:inline-flex items-center gap-2 rounded-full border border-sand-300 px-4 py-2 hover:bg-sand-100">Bezpłatna wycena</a>
+      </div>
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="rounded-3xl border border-sand-200 bg-sand-100/60 p-6 shadow-soft">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-sand-900 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l7.5 7.5a3 3 0 004.243 0l3.757-3.757a3 3 0 000-4.243L11 4 3 12z"/></svg>
+            </span>
+            <h3 class="font-semibold">Nadzory archeologiczne</h3>
+          </div>
+          <p class="mt-3 text-sm text-sand-700">Nadzór przy robotach ziemnych, szybka reakcja, raporty do WKZ.</p>
+        </article>
+        <article class="rounded-3xl border border-sand-200 bg-sand-100/60 p-6 shadow-soft">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-sand-900 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 3h10M9 3a5 5 0 0010 0M5 8h14a10 10 0 01-10 10A10 10 0 015 8z"/></svg>
+            </span>
+            <h3 class="font-semibold">Badania wykopaliskowe</h3>
+          </div>
+          <p class="mt-3 text-sm text-sand-700">Wykopy sondażowe i szerokopłaszczyznowe, dokumentacja, inwentaryzacja.</p>
+        </article>
+        <article class="rounded-3xl border border-sand-200 bg-sand-100/60 p-6 shadow-soft">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-sand-900 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 18l-6 3V6l6-3 6 3 6-3v15l-6 3-6-3zM9 3v15M15 6v15"/></svg>
+            </span>
+            <h3 class="font-semibold">Badania powierzchniowe</h3>
+          </div>
+          <p class="mt-3 text-sm text-sand-700">Systematyczne przejścia, rejestracja znalezisk, weryfikacja AZP.</p>
+        </article>
+        <article class="rounded-3xl border border-sand-200 bg-sand-100/60 p-6 shadow-soft">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-sand-900 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+            <h3 class="font-semibold">Badania ratownicze</h3>
+          </div>
+          <p class="mt-3 text-sm text-sand-700">Szybkie działania w sytuacjach nagłych, zabezpieczenie dziedzictwa.</p>
+        </article>
+        <article class="rounded-3xl border border-sand-200 bg-sand-100/60 p-6 shadow-soft">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-sand-900 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 1.343-3 3v6a3 3 0 003 3 3 3 0 003-3v-6c0-1.657-1.343-3-3-3z"/></svg>
+            </span>
+            <h3 class="font-semibold">Opracowania materiałów krzemiennych</h3>
+          </div>
+          <p class="mt-3 text-sm text-sand-700">Analizy typologiczne i technologiczne, fotografie, katalogi i tabele.</p>
+        </article>
+        <article class="rounded-3xl border border-sand-200 bg-sand-100/60 p-6 shadow-soft">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-sand-900 text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6l4 2"/></svg>
+            </span>
+            <h3 class="font-semibold">Obsługa prawno-konserwatorska</h3>
+          </div>
+          <p class="mt-3 text-sm text-sand-700">Wnioski, uzgodnienia, sprawozdania do WKZ; wsparcie formalne inwestycji.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Realizacje (placeholdery do podmiany) -->
+  <section id="projects" class="py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between gap-6">
+        <h2 class="font-display text-3xl font-semibold tracking-tight">Realizacje</h2>
+        <a href="#contact" class="hidden md:inline text-sm underline underline-offset-4 hover:opacity-80">Poproś o pełne portfolio</a>
+      </div>
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="group overflow-hidden rounded-3xl border border-sand-200 bg-white shadow-soft">
+          <div class="relative aspect-video">
+            <img src="https://jurapolska.com/foto/jurapolska1399.jpg" alt="Aerial" class="h-full w-full object-cover group-hover:scale-105 transition" />
+            <span class="absolute left-3 top-3 rounded-full bg-white/90 px-2 py-1 text-xs">przykład</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-semibold">Dokumentacja nadzoru — inwestycja liniowa</h3>
+            <p class="mt-2 text-sm text-sand-700">Przykładowy opis realizacji. (Podmień na konkretny projekt.)</p>
+          </div>
+        </article>
+        <article class="group overflow-hidden rounded-3xl border border-sand-200 bg-white shadow-soft">
+          <div class="relative aspect-video">
+            <img src="https://jurapolska.com/foto/jurapolska1407.jpg" alt="Pottery" class="h-full w-full object-cover group-hover:scale-105 transition" />
+            <span class="absolute left-3 top-3 rounded-full bg-white/90 px-2 py-1 text-xs">przykład</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-semibold">Badania wykopaliskowe — inwestycja kubaturowa</h3>
+            <p class="mt-2 text-sm text-sand-700">Przykładowy opis badań. (Podmień na konkretny projekt.)</p>
+          </div>
+        </article>
+        <article class="group overflow-hidden rounded-3xl border border-sand-200 bg-white shadow-soft">
+          <div class="relative aspect-video">
+            <img src="https://jurapolska.com/foto/jurapolska1009.jpg" alt="Workshop" class="h-full w-full object-cover group-hover:scale-105 transition" />
+            <span class="absolute left-3 top-3 rounded-full bg-white/90 px-2 py-1 text-xs">przykład</span>
+          </div>
+          <div class="p-6">
+            <h3 class="font-semibold">Badania powierzchniowe — weryfikacja AZP</h3>
+            <p class="mt-2 text-sm text-sand-700">Przykładowy opis badań. (Podmień na konkretny projekt.)</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publikacje -->
+  <section id="publications" class="py-20 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="font-display text-3xl font-semibold tracking-tight">Publikacje</h2>
+      <div class="mt-8 divide-y divide-sand-200 rounded-3xl border border-sand-200 bg-white shadow-soft">
+        <article class="p-6">
+          <h3 class="font-medium">Obrządek pogrzebowy w mezolicie na terytorium Polski.</h3>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="py-20 bg-gradient-to-b from-sand-100 to-sand-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="font-display text-3xl font-semibold tracking-tight">Masz inwestycję? Zadbamy o część archeologiczną.</h2>
+          <p class="mt-4 text-sand-700">Nadzory, badania wykopaliskowe i powierzchniowe, badania ratownicze, opracowania materiałów oraz pełna obsługa formalna.</p>
+          <ul class="mt-6 grid grid-cols-2 gap-3 text-sm">
+            <li class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-emerald-500"></span>Działamy zgodnie z decyzją WKZ</li>
+            <li class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-emerald-500"></span>Własny sprzęt terenowy</li>
+            <li class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-emerald-500"></span>Krótki czas reakcji</li>
+            <li class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-emerald-500"></span>Referencje na życzenie</li>
+          </ul>
+          <p class="mt-6 text-sm text-sand-700">E-mail: <a class="underline" href="mailto:archeo-jura@gmail.com">archeo-jura@gmail.com</a><br>Tel.: <a class="underline" href="tel:+48515579235">515-579-235</a></p>
+        </div>
+        <div class="rounded-3xl border border-sand-200 bg-white p-6 shadow-soft">
+          <form action="https://formsubmit.co" method="post" class="grid gap-4" aria-label="Formularz kontaktowy">
+            <div>
+              <label for="name" class="block text-sm font-medium">Imię i nazwisko</label>
+              <input id="name" name="name" type="text" required class="mt-1 w-full rounded-xl border border-sand-300 bg-sand-50 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sand-400" />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium">Adres e-mail</label>
+              <input id="email" name="email" type="email" required class="mt-1 w-full rounded-xl border border-sand-300 bg-sand-50 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sand-400" />
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium">Opis inwestycji / wiadomość</label>
+              <textarea id="message" name="message" rows="4" required class="mt-1 w-full rounded-xl border border-sand-300 bg-sand-50 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sand-400"></textarea>
+            </div>
+            <div class="flex items-center justify-between gap-4">
+              <label class="inline-flex items-center gap-2 text-xs"><input type="checkbox" class="rounded border-sand-300" required/> Wyrażam zgodę na kontakt w sprawie mojego zapytania.</label>
+              <button type="submit" class="inline-flex items-center gap-2 rounded-xl bg-sand-900 px-5 py-3 text-white hover:opacity-90">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 12h14M12 5l7 7-7 7"/></svg>
+                Wyślij
+              </button>
+            </div>
+          </form>
