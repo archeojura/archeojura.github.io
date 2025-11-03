@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://archeo-jura.pl/sitemap.xml
