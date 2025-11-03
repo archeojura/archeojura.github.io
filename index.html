@@ -6,7 +6,7 @@
   <title>Jurajska Pracownia Archeologiczna — Badania i Nadzory</title>
   <meta name="description" content="Nadzory i badania archeologiczne, badania powierzchniowe i ratownicze, opracowania materiałów krzemiennych oraz obsługa prawno-konserwatorska.">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="assets/css/style.css"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
   <script>
     tailwind.config = {
       theme: {
@@ -270,8 +270,7 @@
     </div>
   </section>
 
-  
-  <!-- CTA -->
+  <!-- Footer -->
   <footer id="footer" class="pt-10 pb-20 bg-gradient-to-b from-sand-200 to-sand-100">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="grid md:grid-cols-2 gap-10 items-center text-sm">
@@ -281,7 +280,7 @@
             ul. Kresowa 53 42-400 Zawiercie<br />
             NIP: 6492254412<br />
             REGON: 542769873<br />
-            Tel.: <a class="underline" href="tel:+48515579235">515-579-235</a>
+            Tel.: <a class="underline" href="tel:+48515579235">515 579 235</a>
           </p>
           <p class="mt-6 text-sand-300">Strona stworzona przez <a class="underline" href="https://github.com/irondnb">Michał Szota</a></p>
         </div>
@@ -289,32 +288,32 @@
     </div>
   </footer>
 </body>
-<script>
-(() => {
-  const el = document.getElementById('logo-ammonite');
-  if (!el) return;
+  <script>
+  (() => {
+    const el = document.getElementById('logo-ammonite');
+    if (!el) return;
 
-  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
-  let ticking = false;
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let ticking = false;
 
-  function update() {
-    if (reduce.matches) return;
-    const y = window.scrollY || window.pageYOffset;
-    const deg = (y * 0.235) % 360;
-    el.style.transform = `rotate(${deg}deg)`;
-  }
+    function update() {
+      if (reduce.matches) return;
+      const y = window.scrollY || window.pageYOffset;
+      const deg = (y * 0.22) % 360;
+      el.style.transform = `rotate(${deg}deg)`;
+    }
 
-  function onScroll() {
-    if (ticking) return;
-    ticking = true;
-    requestAnimationFrame(() => {
-      update();
-      ticking = false;
-    });
-  }
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        update();
+        ticking = false;
+      });
+    }
 
-  window.addEventListener('scroll', onScroll, { passive: true });
-  update(); 
-})();
-</script>
+    window.addEventListener('scroll', onScroll, { passive: true });
+    update(); 
+  })();
+  </script>
 </html>
